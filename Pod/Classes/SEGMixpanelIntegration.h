@@ -1,10 +1,12 @@
 #import <Foundation/Foundation.h>
-#import <Mixpanel/Mixpanel.h>
+#import "Mixpanel.h" // NOTE: this path will work only with SPM
+//#import <Mixpanel/Mixpanel.h>
 
 #if defined(__has_include) && __has_include(<Analytics/SEGAnalytics.h>)
 #import <Analytics/SEGIntegration.h>
 #else
-#import <Segment/SEGIntegration.h>
+#import "SEGIntegration.h" // NOTE: this path will work only with SPM
+//#import <Segment/SEGIntegration.h>
 #endif
 
 
